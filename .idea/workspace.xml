@@ -21,6 +21,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575302711362</updated>
       <workItem from="1575302713191" duration="1345000" />
+      <workItem from="1575304061348" duration="279000" />
     </task>
     <servers />
   </component>
@@ -71,7 +73,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
