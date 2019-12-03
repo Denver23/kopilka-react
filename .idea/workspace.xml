@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="First-update">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/Header/Header.module.scss" afterDir="false" />
+    <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/CategoriesMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/CategoriesMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/Search/Search.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/TopMenu/TopMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/TopMenu/TopMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/Header/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,14 +37,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1UQxe1j91EbVed9CqPRhw9Tq1X5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Components/CategoryComponent" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -36,11 +68,19 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\CategoriesMenu" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent" />
       <recent name="D:\WebUI\kopilka-react\src\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\HeaderComponent" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\HeaderComponent\CategoriesMenu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +121,18 @@
       <option name="presentableId" value="Default" />
       <updated>1575302711362</updated>
       <workItem from="1575302713191" duration="1345000" />
-      <workItem from="1575304061348" duration="2215000" />
+      <workItem from="1575304061348" duration="2227000" />
+      <workItem from="1575306303886" duration="1621000" />
+      <workItem from="1575307936214" duration="1326000" />
+      <workItem from="1575309300149" duration="29000" />
+      <workItem from="1575309370187" duration="13000" />
+      <workItem from="1575309392636" duration="28000" />
+      <workItem from="1575309462413" duration="43000" />
+      <workItem from="1575309529521" duration="25000" />
+      <workItem from="1575309625999" duration="9000" />
+      <workItem from="1575309643594" duration="10383000" />
+      <workItem from="1575392959905" duration="4323000" />
+      <workItem from="1575397429385" duration="7373000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -90,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575304457996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First-update">
+      <created>1575306287415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575306287415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

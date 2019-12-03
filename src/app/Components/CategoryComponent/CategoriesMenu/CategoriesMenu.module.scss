@@ -1,0 +1,38 @@
+@import '../../../App';
+
+.topLine {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+}
+.generalMenuList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categoriesList {
+  display: flex;
+  list-style: none;
+
+  .categoryItem {
+    padding-right: 30px;
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}
+.linkUrl {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #b9bed1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 25px 0;
+  display: block;
+}
+
+.linkUrl.active {
+  color: $primary-text-color;
+}
