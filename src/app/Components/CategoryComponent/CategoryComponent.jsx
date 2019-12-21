@@ -1,14 +1,19 @@
 import React from 'react';
-import CategoriesMenu from './CategoriesMenu/CategoriesMenu';
+import Slider from './Slider/Slider';
+import Refines from './Refines/Refines';
+import ProductList from './ProductList/ProductList';
+import PagesButtonList from './PagesButtonList/PagesButtonList';
 import s from './CategoryComponent.module.scss';
 
 const CategoryComponent = () => {
     return (
         <div className={s.CategoryComponent}>
-            <div className={s.wrapper}>
-            <CategoriesMenu />
+            <Slider />
+            <div className={s.productsGrid}>
+            <Refines />
+            <ProductList />
             </div>
-
+            <PagesButtonList categoryUrl='cell-phones' prCount='85'/>
         </div>
     )
 }

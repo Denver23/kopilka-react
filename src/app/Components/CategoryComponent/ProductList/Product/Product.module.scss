@@ -1,0 +1,40 @@
+@import '../../../../Standarts.scss';
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  text-decoration: none;
+  border-radius: $border-radius;
+  font-weight: 600;
+
+  .productImage {
+    height: 67%;
+    padding: 5px 0;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .productTitle {
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    color: #1c1e23;
+    padding: 0 10px 10px 10px;
+  }
+  .productAdditionalText {
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #b8bfd3;
+    padding: 10px 10px;
+  }
+  .price {
+    font-size: 1.4rem;
+    font-family: Montserrat;
+    color: #343e5c;
+  }
+}

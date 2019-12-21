@@ -1,7 +1,18 @@
-@import '../../App';
+@import '../../Standarts.scss';
 
+.CategoryComponent {
+  background-color: #e4e5e7;
+}
 .wrapper {
   margin: 0 auto;
   max-width: $page-width;
   display: grid;
+}
+.productsGrid {
+  padding: 50px 20px 0 20px;
+  max-width: $page-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(200px, 270px) 3fr;
+  grid-column-gap: 30px;
 }

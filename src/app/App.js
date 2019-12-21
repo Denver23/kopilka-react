@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderComponent from "./Components/HeaderComponent/HeaderComponent.jsx";
 import CategoryComponent from "./Components/CategoryComponent/CategoryComponent";
-import './App.scss';
 
 const App = () => {
     return (

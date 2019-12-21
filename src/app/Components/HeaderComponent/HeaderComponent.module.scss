@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap');
-@import '../../App';
+@import '../../Standarts.scss';
 
 .headerDecorator{
   position: relative;
@@ -11,7 +11,7 @@
     height: 1px;
     background-color: #f0f2f7;
     position: absolute;
-    bottom: 0;
+    bottom: 64px;
   }
   .headerComponent {
     display: grid;

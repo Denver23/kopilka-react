@@ -1,0 +1,7 @@
+@import '../../../../../Standarts.scss';
+
+.checkboxBody {
+  display: flex;
+  flex-direction: column;
+  padding: 10px $refine-padding-left;
+}

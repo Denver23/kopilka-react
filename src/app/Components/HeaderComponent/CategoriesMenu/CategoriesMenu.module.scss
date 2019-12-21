@@ -1,9 +1,12 @@
-@import '../../../App';
+@import '../../../Standarts.scss';
 
 .topLine {
+  max-width: $page-width;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr max-content;
   justify-content: space-between;
+  padding: 0 20px;
 }
 .generalMenuList {
   display: flex;
