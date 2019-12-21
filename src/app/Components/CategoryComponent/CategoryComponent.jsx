@@ -3,6 +3,7 @@ import Slider from './Slider/Slider';
 import Refines from './Refines/Refines';
 import ProductList from './ProductList/ProductList';
 import PagesButtonList from './PagesButtonList/PagesButtonList';
+import BestSellers from './BestSellers/BestSellers';
 import s from './CategoryComponent.module.scss';
 
 const CategoryComponent = () => {
@@ -14,6 +15,7 @@ const CategoryComponent = () => {
             <ProductList />
             </div>
             <PagesButtonList categoryUrl='cell-phones' prCount='85'/>
+            <BestSellers />
         </div>
     )
 }

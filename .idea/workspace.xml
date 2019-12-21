@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/PagesButtonList/PagesButtonList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/PagesButtonList/PagesButtonList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CategoriesBlock/CategoriesBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CategoriesBlock/CategoriesBlock.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/Refines.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/Refines.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Standarts.scss" afterDir="false" />
+    <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="General Page w/o footer">
+      <change afterPath="$PROJECT_DIR$/psd/maket-glavnoy-stranitsyi-internet-magazina.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/psd/maket-glavnoy-stranitsyi-internet-magazina.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/CategoriesMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/CategoriesMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/CategoriesMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/CategoriesMenu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/Search/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoriesMenu/Search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/Search/Search.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,18 +65,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\HeaderComponent" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\CategoriesMenu" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent" />
-      <recent name="D:\WebUI\kopilka-react\src\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\ProductList\Product" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\Checkboxes\Checkbox" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\Checkboxes" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\RadioButton\RadioButton" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\common\Checkboxes" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\common\RadioButtons" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\common" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\HeaderComponent" />
+      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\CategoriesMenu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +138,7 @@
       <workItem from="1576410271870" duration="583000" />
       <workItem from="1576415715129" duration="7825000" />
       <workItem from="1576496533730" duration="7586000" />
-      <workItem from="1576932040673" duration="248000" />
+      <workItem from="1576932040673" duration="6961000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -175,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575404869421</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First-update">
+      <created>1576932525105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576932525105</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +195,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.jsx</url>
+          <url>file://$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.jsx</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

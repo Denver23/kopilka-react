@@ -1,6 +1,6 @@
 import React from "react";
-import RadioButtons from "./RadioButtons/RadioButtons";
-import Checkboxes from "./Checkboxes/Checkboxes";
+import RadioButtons from "../../../common/RadioButtons/RadioButtons";
+import Checkboxes from "../../../common/Checkboxes/Checkboxes";
 import s from './CustomRefine.module.scss';
 
 const CustomRefine = (props) => {

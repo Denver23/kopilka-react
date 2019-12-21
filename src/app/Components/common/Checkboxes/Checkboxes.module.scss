@@ -1,6 +1,6 @@
-@import '../../../../../Standarts.scss';
+@import '../../../Standarts';
 
-.radioButtons {
+.checkboxBody {
   display: flex;
   flex-direction: column;
   padding: 10px $refine-padding-left;
