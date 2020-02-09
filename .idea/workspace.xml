@@ -4,26 +4,95 @@
     <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="General Page w/o footer">
       <change afterPath="$PROJECT_DIR$/psd/maket-glavnoy-stranitsyi-internet-magazina.psd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/psd/maket-glavnoy-stranitsyi-internet-magazina.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/FooterComponent/FooterComponent.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartProduct/CartProduct.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartProduct/CartProduct.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/ProfileLink/ProfileLink.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/ProfileLink/ProfileLink.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/SignIn/SignInForm/SignInForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/SignIn/SignInForm/SignInForm.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/Breadcrumbs/Breadcrumbs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/Breadcrumbs/Breadcrumbs.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/DetailedInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/DetailedInfo.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/InfoList/InfoList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/InfoList/InfoList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/ProductsInfo/ProductsInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/DetailedInfo/ProductsInfo/ProductsInfo.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/Options/Options.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/Options/Options.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductComponent.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductComponentWrapper.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductGallery/ProductGallery.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductGallery/ProductGallery.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductReviews/ProductReviews.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/ProductReviews/ProductReviews.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/RecommendedProducts/RecommendedProducts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProductComponent/RecommendedProducts/RecommendedProducts.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/Preloader/Preloader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/common/Preloader/Preloader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/appReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/cartReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/headerReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/productGroupReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/productReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/validators/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkbox/Checkbox.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/Checkboxes/Checkboxes.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButton/RadioButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/RadioButtons/RadioButtons.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/BestSellers/BestSellers.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/CategoryComponent.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/PagesButtonList/PagesButtonList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/PagesButtonList/PagesButtonList.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product/Product.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/ProductList.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CategoriesBlock/CategoriesBlock.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CategoriesBlock/CategoriesBlock.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/CustomRefine/CustomRefine.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/Refines.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Refines/Refines.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/CategoryComponent/Slider/Slider.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/FooterComponent/FooterComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/FooterComponent/FooterComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/BurgerMenu/BurgerMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/BurgerMenu/BurgerMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/BurgerMenu/BurgerMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/Cart/Cart.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/Cart.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/CategoriesMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/CategoriesMenu/CategoriesMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/CategoriesMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/CategoriesMenu/CategoriesMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/CategoriesMenu/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/CategoriesMenu/Search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/CategoriesMenu/Search/Search.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/HeaderComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/HeaderComponent.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/SignIn/SignIn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/SignIn/SignIn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/SignIn/SignIn.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/TopMenu/TopMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/TopMenu/TopMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/HeaderComponent/TopMenu/TopMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/TopMenu/TopMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/Checkboxes/Checkbox/Checkbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/Checkboxes/Checkbox/Checkbox.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/Checkboxes/Checkboxes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkboxes.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/Checkboxes/Checkboxes.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/RadioButtons/RadioButton/RadioButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButton/RadioButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/RadioButtons/RadioButton/RadioButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/RadioButtons/RadioButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/common/RadioButtons/RadioButtons.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/RadioButtons/RadioButtons.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Standarts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Standarts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +104,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,12 +123,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Components/CategoryComponent/ProductList/Product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-way-of-samurai/react-way-of-samurai-master" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -66,18 +139,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebUI\kopilka-react\src\app\components\ProductComponent\Options" />
+      <recent name="D:\WebUI\kopilka-react\src\app\components\HeaderComponent\Profile" />
+      <recent name="D:\WebUI\kopilka-react\src\app\components\CategoryComponent" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\ProductList\Product" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\Checkboxes\Checkbox" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\Checkboxes" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine\RadioButton\RadioButton" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\Refines\CustomRefine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebUI\kopilka-react\src\app\components\ProductComponent\DetailedInfo" />
+      <recent name="D:\WebUI\kopilka-react\src\app\components\CategoryComponent\Reviews\Review" />
+      <recent name="D:\WebUI\kopilka-react\src\app\components\CategoryComponent\Reviews" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\common\Checkboxes" />
       <recent name="D:\WebUI\kopilka-react\src\app\Components\common\RadioButtons" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\common" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\HeaderComponent" />
-      <recent name="D:\WebUI\kopilka-react\src\app\Components\CategoryComponent\CategoriesMenu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -106,6 +179,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -138,7 +215,39 @@
       <workItem from="1576410271870" duration="583000" />
       <workItem from="1576415715129" duration="7825000" />
       <workItem from="1576496533730" duration="7586000" />
-      <workItem from="1576932040673" duration="6961000" />
+      <workItem from="1576932040673" duration="7121000" />
+      <workItem from="1577102476408" duration="7924000" />
+      <workItem from="1577133879922" duration="621000" />
+      <workItem from="1577530984311" duration="14710000" />
+      <workItem from="1577614844744" duration="2018000" />
+      <workItem from="1577792819972" duration="13844000" />
+      <workItem from="1577882012820" duration="19466000" />
+      <workItem from="1578159794777" duration="6919000" />
+      <workItem from="1578223564696" duration="14343000" />
+      <workItem from="1578254618549" duration="240000" />
+      <workItem from="1578394464717" duration="18270000" />
+      <workItem from="1578762915140" duration="1007000" />
+      <workItem from="1578832077947" duration="2327000" />
+      <workItem from="1578834532308" duration="15788000" />
+      <workItem from="1578913285880" duration="15400000" />
+      <workItem from="1579281663795" duration="5045000" />
+      <workItem from="1579346850906" duration="18930000" />
+      <workItem from="1579438150871" duration="15377000" />
+      <workItem from="1579459787299" duration="51000" />
+      <workItem from="1579953637659" duration="6474000" />
+      <workItem from="1579971439812" duration="5191000" />
+      <workItem from="1580230910719" duration="2017000" />
+      <workItem from="1580316924422" duration="3112000" />
+      <workItem from="1580491459421" duration="5268000" />
+      <workItem from="1580563298111" duration="6410000" />
+      <workItem from="1580642140977" duration="14576000" />
+      <workItem from="1580667341114" duration="6118000" />
+      <workItem from="1580750293975" duration="2830000" />
+      <workItem from="1580760647559" duration="2425000" />
+      <workItem from="1580835190167" duration="2404000" />
+      <workItem from="1580983987402" duration="18508000" />
+      <workItem from="1581166976660" duration="11393000" />
+      <workItem from="1581197303163" duration="9461000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -168,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576932525105</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="General Page w/o footer">
+      <created>1576939162987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576939162987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,16 +305,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First-update" />
-    <option name="LAST_COMMIT_MESSAGE" value="First-update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/Components/common/Checkboxes/Checkbox/Checkbox.jsx</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="General Page w/o footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="General Page w/o footer" />
   </component>
 </project>

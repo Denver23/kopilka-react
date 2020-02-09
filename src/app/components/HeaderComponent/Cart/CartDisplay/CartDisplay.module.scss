@@ -1,0 +1,21 @@
+@import '../../../../Standarts';
+
+.cartDisplay {
+  position: absolute;
+  background-color: #fff;
+  z-index: 11;
+  top: 130%;
+  right: 0;
+  padding: 20px;
+  border: 2px #e3e8f0 solid;
+  border-radius: 17px;
+  min-width: 250px;
+  flex-direction: column;
+
+
+  .message {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,7 @@
+@import './Standarts.scss';
+
+.appGrid {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
