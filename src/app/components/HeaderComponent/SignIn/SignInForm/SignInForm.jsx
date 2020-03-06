@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import s from './SignInForm.module.scss';
 import {Field, reduxForm} from "redux-form";
 import Checkbox from "../../../common/Checkboxes/Checkbox/Checkbox";
@@ -6,24 +6,17 @@ import {Link} from "react-router-dom";
 import {minLength, requiredField} from "../../../../utils/validators/validators";
 import {connect} from "react-redux";
 import Preloader from "../../../common/Preloader/Preloader";
+import Input from "../../../common/Input/Input";
 
 const SignInForm = (props) => {
     return <form className={s.signInForm} onSubmit={props.handleSubmit}>
-        <Field placeholder={'Login'} component={inputLogin} type={'text'} name={'login'} validate={[requiredField, minLength]}/>
-        <Field placeholder={'Password'} component={inputLogin} type={'password'} name={'password'} validate={[requiredField, minLength]}/>
+        <Field placeholder={'Login'} component={Input} type={'text'} name={'login'} validate={[requiredField, minLength]}/>
+        <Field placeholder={'Password'} component={Input} type={'password'} name={'password'} validate={[requiredField, minLength]}/>
         <Field component={Checkbox} field={{placeholder: 'Remember Me'}} name={'rememberMe'} type={'checkbox'}/>
         {props.error && <div className={s.errorMessage}>{props.error}</div>}
         <button type={'submit'} className={s.submitFormButton}>Submit</button>
-        <Link to={'/registration'} className={s.loginFormLink}>Registration</Link>
+        <Link to={'/sign-up'} className={s.loginFormLink}>Sign Up</Link>
     </form>
-}
-
-const inputLogin = ({input, meta: {touched, error}, ...props}) => {
-    const hasError = touched && error;
-    return <div className={s.inputContainer}>
-        <input {...input} {...props}  className={s.inputLogin + " " + (hasError ? s.errorInput : "")}/>
-        {hasError && <div className={s.errorMessage}>{error}</div>}
-    </div>
 }
 
 const SignInFormRedux = reduxForm({
@@ -31,7 +24,22 @@ const SignInFormRedux = reduxForm({
 })(SignInForm);
 
 const SignInPreloader = ({onSubmit, isFetching, ...props}) => {
-    return <div className={s.signInFormWrapper}>
+
+    let signInFormWrapper = useRef();
+
+    let handleClickOutside = (e) => {
+        const domNode = signInFormWrapper;
+        if ((!domNode.current || !domNode.current.contains(e.target))) {
+            props.setShowForm(false);
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+        return () => (document.removeEventListener('click', handleClickOutside))
+    }, [])
+
+    return <div ref={signInFormWrapper} className={s.signInFormWrapper}>
         {!isFetching ? (<SignInFormRedux onSubmit={onSubmit} />) : (<div style={{position: 'relative'}}><SignInFormRedux onSubmit={onSubmit} /><Preloader/></div>)}
     </div>
 }

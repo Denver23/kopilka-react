@@ -61,6 +61,21 @@ export const login = (login, password, rememberMe) => async (dispatch) => {
     }
 }
 
+export const signUp = (data) => async (dispatch) => {
+    let response = await authAPI.signUp(data);
+
+    if(response.resultCode === 1) {
+        dispatch(setAuthUserData(1, data.email, data.login, true));
+    } else if(response.resultCode === 0) {
+        dispatch(stopSubmit("signUpForm", {_error: response.data.message}));
+    }
+}
+
+export const signOut = () => (dispatch) => {
+    authAPI.signOut();
+    dispatch(setAuthUserData(null, null, null, false));
+}
+
 export const toggleIsFetching =(isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
 
 export default authReducer;

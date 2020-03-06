@@ -43,9 +43,20 @@ export const loadCategory = (type, url) => async (dispatch) => {
     dispatch(toggleLoading(true));
     let response = await prGroupAPI.loadPrGroup(type, url);
 
-    if(response.data) {
+    if(response.resultCode === 1) {
         dispatch(setCategory(response.data));
-    }
+    } else(
+        dispatch(setCategory({
+            "id": null,
+            "productCount": '',
+            "products": [],
+            "refines": [],
+            'categories': [],
+            "reviews": [],
+            "bestSellers": [],
+            'slides': []
+        }))
+    )
     dispatch(toggleLoading(false));
 }
 

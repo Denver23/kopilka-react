@@ -1,30 +1,38 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef} from "react";
 import s from './CartDisplay.module.scss'
 import CartProduct from "./CartProduct/CartProduct";
-import {connect} from "react-redux";
-import {initializeProducts} from "../../../../redux/cartReducer";
+import {Link} from "react-router-dom";
 
 const CartDisplay = (props) => {
 
-    useEffect(() => {
-        let loadProducts = JSON.parse(localStorage.getItem('cartProducts'));
+    let cartDisplay = useRef();
 
-        if(loadProducts !== null) {
-            props.initializeProducts(loadProducts);
+    let handleClickOutside = (e) => {
+        const domNode = cartDisplay;
+        if ((!domNode.current || !domNode.current.contains(e.target))) {
+            props.changeDisplay(false);
         }
-    }, [localStorage.getItem('cartProducts')])
+    }
 
-    return <div className={s.cartDisplay}>
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+        return () => (document.removeEventListener('click', handleClickOutside))
+    }, [])
+
+    let totalPrice = 0;
+
+    props.products.forEach(product => {
+        totalPrice += product.price * product.quantity;
+    })
+
+    return <div ref={cartDisplay} className={s.cartDisplay}>
         {props.products.length ? props.products.map(product => {
             return <CartProduct {...product} />
             }) : <span className={s.message}>Your cart is empty</span>}
+        {props.products.length ? <div className={s.checkoutForm}><span className={s.totalPrice}>Total Price: {totalPrice}</span><Link to={'/cart'} className={s.checkoutButton}>Checkout</Link></div> : ''}
     </div>
 }
 
-let mapStateToProps = (state) => {
-    return {
-        products: state.cartReducer.products
-    }
-}
 
-export default connect(mapStateToProps, {initializeProducts})(CartDisplay);
+
+export default CartDisplay;

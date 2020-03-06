@@ -4,4 +4,9 @@
   display: flex;
   flex-direction: column;
   padding: 10px $refine-padding-left;
+
+  &>label {
+    height: $refine-line-height;
+    font-weight: 600;
+  }
 }

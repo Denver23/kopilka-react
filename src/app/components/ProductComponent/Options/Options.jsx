@@ -4,10 +4,10 @@ import {Field, reduxForm} from "redux-form";
 
 const Options = ({ handleSubmit, fields, ...props }) => {
 
-    let [activeOptions, changeOptions] = useState(Object.keys(fields[0].options).map(option => {
+    let [activeOptions, changeOptions] = useState(fields.length !== 0 ? Object.keys(fields[0].options).map(option => {
         return {'name': option, 'key': ''};
-    }));
-    let [currentProduct, changeProduct] = useState(fields.length > 1 ? undefined : fields[0]);
+    }) : []);
+    let [currentProduct, changeProduct] = useState(fields.length > 1 ? undefined : fields.length == 1 ? fields[0] : undefined);
 
     let dataOption = (option, value) => {
         let result = activeOptions;
@@ -48,7 +48,6 @@ const Options = ({ handleSubmit, fields, ...props }) => {
                 return option.key === product.options[option.name];
             })
         })
-        console.log();
         changeProduct(newProduct);
     }
 
@@ -84,7 +83,7 @@ const Select = ({input, type, parentProducts, activeOptions, ...props}) => {
         }
         return result;
     }
-    let keys = parentProducts.map(item => {
+    let keys = parentProducts == [] ? [] : parentProducts.map(item => {
         if (
             activeOptions.every(optionObject => {
                 if (optionObject.key === '' || optionObject.name === input.name) {
@@ -97,14 +96,14 @@ const Select = ({input, type, parentProducts, activeOptions, ...props}) => {
         }
         return {'optionKey': item.options[input.name], 'disabled': true};
     });
-    let items = unique(parentProducts.map(item => {
+    let items = parentProducts == [] ? [] : unique(parentProducts.map(item => {
         return item.options[input.name];
     }))
     return <div className={s.options}>
         <span className={s.optionTitle}>{input.name}</span>
         <select {...input} type={type} className={s.optionSelect}>
             <option value={''}></option>
-            {items.map(item => {
+            {parentProducts == [] ? '' : items.map(item => {
                 return <option value={item} key={item} disabled={
                     !keys.some(key => {
                         if(key.optionKey === item && key.disabled === false) return true;

@@ -13,7 +13,7 @@ const SignIn = (props) => {
 
     return <div className={s.signInComponent}>
         <div className={s.signInButton + ' ' + (showForm ? s.activeForm : '')} onClick={() => {setShowForm(!showForm)}}>Sign In</div>
-        {showForm ? <SignInForm onSubmit={onSubmitForm}/> : ''}
+        {showForm ? <SignInForm onSubmit={onSubmitForm} setShowForm={setShowForm}/> : ''}
     </div>
 }
 

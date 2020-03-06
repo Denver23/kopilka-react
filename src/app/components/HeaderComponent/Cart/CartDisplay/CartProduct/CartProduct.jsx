@@ -1,69 +1,81 @@
 import s from "./CartProduct.module.scss";
 import {Link} from "react-router-dom";
-import {Field, formValueSelector, reduxForm} from "redux-form";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {connect} from "react-redux";
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import {changeQuantity, deleteFromCart} from "../../../../../redux/cartReducer";
+import {Formik} from "formik";
 
 const CartProduct = ({options, ...props}) => {
 
     let localProducts = JSON.parse(localStorage.getItem('cartProducts'));
-    let initialValues = {};
-    initialValues['quantity'] = localProducts.find(item => {
-        return item.sku == props.sku;
-    }).quantity;
+
+    let [quantity, changeQuantity] = useState(localProducts.findIndex(item => {return item.sku === props.sku;}) != -1 ? localProducts.find(item => {
+        return item.sku === props.sku;
+    }).quantity : 0)
+
+
+    return <div>
+        {quantity ?
+        <div className={s.cartProduct}>
+            <div className={s.productInfo}>
+                <Link to={`/brands/${props.brand.toLowerCase()}/id${props.id}`} className={s.productURL}>
+                    <img src={props.thumbnail} alt="" className={s.thumbnail}/>
+                    <span className={s.productTitle}>{`${props.brand} - ${props.productTitle}`}</span>
+                </Link>
+                <QuantityForm initialValues={{quantity: props.quantity,sku: props.sku}} changeQuantity={props.changeQuantity}/>
+                <ProductPrice price={props.price} name={props.sku} quantity={props.quantity}/>
+                <span onClick={(e) => {
+                    props.deleteFromCart(props.sku)
+                }} className={s.deleteProduct}><DeleteForeverIcon fontSize="large"/></span>
+            </div>
+            {Object.keys(options) ? <div className={s.productOptions}>{Object.keys(options).map(item => {
+                return <div className={s.option}>
+                    <span className={s.optionTitle}>{item}:</span>
+                    <span>{options[item]}</span>
+                </div>
+            })}</div> : ''}
+        </div> : ''}
+    </div>
+}
+
+const QuantityForm = (props) => {
+
+
 
     const changeLocalQuantity = (sku, quantity) => {
+        if(quantity === undefined) {
+            return;
+        }
         let localProducts = JSON.parse(localStorage.getItem('cartProducts'));
         localProducts.forEach(item => {
-            if(item.sku == sku) {
+            if (item.sku === sku) {
                 item.quantity = quantity;
             }
         })
+        props.changeQuantity(sku, quantity);
         localStorage.setItem('cartProducts', JSON.stringify(localProducts));
     }
 
-    return <div className={s.cartProduct}>
-        <div className={s.productInfo}>
-            <Link to={`/brands/${props.brand.toLowerCase()}/id${props.id}`} className={s.productURL}>
-                <img src={props.thumbnail} alt="" className={s.thumbnail}/>
-                <span className={s.productTitle}>{`${props.brand} - ${props.productTitle}`}</span>
-            </Link>
-            <ProductQuantityForm onChange={(e)=>{changeLocalQuantity(props.sku, e.quantity)}} form={props.sku} fields={[{'name': 'quantity'}]} initialValues={initialValues} />
-            <ProductPriceWrapper price={props.price} name={props.sku} />
-            <span className={s.deleteProduct}><DeleteForeverIcon fontSize="large" /></span>
-        </div>
-        {Object.keys(options) ? <div className={s.productOptions}>{Object.keys(options).map(item => {
-            return <div className={s.option}>
-                <span className={s.optionTitle}>{item}:</span>
-                <span>{options[item]}</span>
-            </div>
-        })}</div> : ''}
-    </div>
-}
+    return (
+        <Formik {...props} enableReinitialize>
+            {formik => (
+                <form onSubmit={formik.handleSubmit} onChange={e=> {changeLocalQuantity(formik.values.sku, e.target.value)}}>
+                    <input
+                        id="quantity"
+                        type="number"
+                        onChange={formik.handleChange}
+                        {...formik.getFieldProps('quantity')}
+                        className={s.productQuantityField}
+                        />
+                </form>
+            )}
+        </Formik>
+    );
+};
 
 const ProductPrice = (props) => {
     return <span className={s.productPrice}>{props.price * props.quantity}$</span>
 }
 
-let mapStateToProps = (state, ownProps) => {
-    return {
-        'quantity': formValueSelector(ownProps.name)(state, 'quantity')
-    }
-}
-
-const ProductPriceWrapper = connect(mapStateToProps,{})(ProductPrice);
-
-const ProductQuantity = (props) => {
-    return <form onSubmit={props.handleSubmit}>
-        <Field component={ProductQuantityField} type={'number'} name={props.fields[0].name} className={s.productQuantityField}></Field>
-    </form>
-}
-
-const ProductQuantityField = ({input, meta: {touched, error}, ...props}) => {
-    return <input {...input} {...props} className={s.productQuantityField} min={1} max={10}/>
-}
-
-const ProductQuantityForm = reduxForm({})(ProductQuantity);
-
-export default CartProduct;
+export default connect((state) => ({}), {deleteFromCart,changeQuantity})(CartProduct);

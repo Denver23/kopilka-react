@@ -7,6 +7,7 @@ import appReducer from "./appReducer";
 import thunkMiddleware from 'redux-thunk';
 import authReducer from "./authReducer";
 import cartReducer from "./cartReducer";
+import profileReducer from "./profileReducer";
 
 let reducers = combineReducers({
     productGroupReducer,
@@ -15,6 +16,7 @@ let reducers = combineReducers({
     appReducer,
     authReducer,
     cartReducer,
+    profileReducer,
     form: formReducer
 })
 

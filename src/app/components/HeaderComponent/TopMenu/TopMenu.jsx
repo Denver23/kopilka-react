@@ -9,7 +9,7 @@ const TopMenu = () => {
             <li><NavLink to="#" className={s.topMenuUrl}>Devices</NavLink></li>
             <li><NavLink to="#" className={s.topMenuUrl}>Delivery & Payment</NavLink></li>
             <li><NavLink to="#" className={s.topMenuUrl}>Guarantee</NavLink></li>
-            <li><NavLink to="#" className={s.topMenuUrl}>About Us</NavLink></li>
+            <li><NavLink to="/about-us/" className={s.topMenuUrl}>About Us</NavLink></li>
         </ul>
     )
 }

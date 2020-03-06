@@ -1,7 +1,6 @@
 @import '../../../Standarts.scss';
 
 .profileBlock {
-  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   color: $primary-text-color;
@@ -20,6 +19,12 @@
     display: block;
     text-decoration: none;
     color: $primary-text-color;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
   }
   .profileButton.activeForm {
     background-color: $primary-text-color;

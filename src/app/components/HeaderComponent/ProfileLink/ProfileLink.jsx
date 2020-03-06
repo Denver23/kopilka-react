@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import s from './ProfileLink.module.scss';
-import {Link} from "react-router-dom";
+import ProfileMenu from "./ProfileMenu/ProfileMenu";
 
 const ProfileLink = ({profile, ...props}) => {
+
+    let [showMenu, setShowMenu] = useState(false);
+
     return (
         <div className={s.profileBlock}>
-            <Link className={s.profileButton}>{profile.login}</Link>
+            <button className={s.profileButton + ' ' + (showMenu ? s.activeForm : '')}  onClick={() => {setShowMenu(!showMenu)}}>{profile.login}</button>
+            {showMenu ? <ProfileMenu setShowMenu={setShowMenu}/> : ''}
         </div>
     )
 }

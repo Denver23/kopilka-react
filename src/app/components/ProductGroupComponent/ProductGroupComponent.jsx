@@ -7,6 +7,7 @@ import BestSellers from './BestSellers/BestSellers';
 import Reviews from './Reviews/Reviews';
 import s from './ProductGroupComponent.module.scss';
 import Preloader from "../common/Preloader/Preloader";
+import PageNotFoundComponent from "../PageNotFoundComponent/PageNotFoundComponent";
 
 const ProductGroupComponent = (props) => {
 
@@ -24,7 +25,7 @@ const ProductGroupComponent = (props) => {
     )
 }
 
-const ProductGroupComponentWrapper = ({loading, ...props}) => {
+const ProductGroupComponentWrapper = ({loading, id, ...props}) => {
 
     useEffect(() => {
         let type = props.match.params.brand ? 'brand' : 'category';
@@ -40,7 +41,7 @@ const ProductGroupComponentWrapper = ({loading, ...props}) => {
     },[props.match.url])
 
     return <div className={s.productGroupWrapper}>
-        {!loading ? (<ProductGroupComponent props={props}/>) : (<Preloader background={'true'}/>)}
+        {!loading ? (id !== null ? <ProductGroupComponent props={props}/> : <PageNotFoundComponent />) : (<Preloader background={'true'}/>)}
     </div>
 }
 

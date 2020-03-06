@@ -25,23 +25,6 @@
     cursor: pointer;
     user-select: none;
   }
-  .inputContainer {
-    margin-bottom: 6px;
-    .inputLogin {
-      border: 0;
-      border-bottom: 1px solid $primary-text-color;
-      padding: 5px;
-      outline: none;
-      color: $primary-text-color;
-      font-size: 1.4rem;
-      width: 200px;
-      max-width: 100%;
-    }
-
-    .inputLogin.errorInput {
-      border-bottom: 1px solid red;
-    }
-  }
   .errorMessage {
     text-transform: none;
     color: red;
@@ -51,7 +34,7 @@
     font-weight: 400;
   }
   .submitFormButton {
-    padding: 5px;
+    padding: 5px 0;
     border: 2px #e3e8f0 solid;
     border-radius: 10px;
     background-color: #fff;
@@ -66,7 +49,6 @@
     transition: background-color .5s, color .5s, border .5s;
 
     &:hover {
-      padding: 5px;
       border: 2px $primary-text-color solid;
       background-color: $primary-text-color;
       color: #fff;

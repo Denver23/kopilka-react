@@ -18,4 +18,28 @@
     font-family: Montserrat;
     font-size: 1.3rem;
   }
+
+  .checkoutForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    margin-top: 10px;
+
+    .totalPrice {
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #000;
+    }
+    .checkoutButton {
+      padding: 7px 15px;
+      background-color: $primary-text-color;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 7px;
+    }
+  }
 }

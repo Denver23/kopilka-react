@@ -18,10 +18,10 @@ const ProductComponent = (props) => {
         {'url': `/brands/${props.match.params.brand}`, 'title': props.brand}
     ];
 
-    let [currentProduct, changeProduct] = useState(undefined);
-    let [activeOptions, changeOptions] = useState(Object.keys(props.parentProducts[0].options).map(option => {
+    let [currentProduct, changeProduct] = useState(props.parentProducts.length > 1 ? undefined : props.parentProducts.length == 1 ? props.parentProducts[0] : undefined);
+    let [activeOptions, changeOptions] = useState(props.parentProducts.length !== 0 ? Object.keys(props.parentProducts[0].options).map(option => {
         return {'name': option, 'key': ''};
-    }));
+    }) : []);
 
     let dataOption = (options) => {
         let result = activeOptions;
@@ -53,7 +53,7 @@ const ProductComponent = (props) => {
                 <div className={s.mainInfo}>
                     <ProductGallery/>
                     <div className={s.priceInfo}>
-                        <Options onChange={updateProduct} fields={props.parentProducts}/>
+                        <Options onChange={(e)=>{updateProduct(e)}} fields={props.parentProducts}/>
                         <div className={s.productActions}>
                             <button className={currentProduct === undefined || !currentProduct.avaibility ? `${s.addToCartButton} ${s.disabled}` : s.addToCartButton} onClick={() => {
                                 props.addToCart(props.brand, props.match.params.id, currentProduct.sku)

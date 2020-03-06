@@ -36,6 +36,63 @@ export const authAPI = {
                 resolve({resultCode: 0, data: {id: '1', login: user, email: user + '@gmail.com'}})
             }, timer)
         })
+    },
+    signUp(data) {
+        return new Promise((resolve, reject) => {
+            let timer = randomInteger(200, 1000);
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            setTimeout(() => {
+                let randomNumber = randomInteger(0, 100);
+                let responseCode = (randomNumber <= 70) ? 1 : 0;
+                if(responseCode === 1) {
+                    resolve({resultCode: responseCode})
+                    let cookieLifeCycle = 3600000;
+                    setCookie('user', data.login, {'samesite': 'lax','max-age': cookieLifeCycle})
+                } else {
+                    resolve({resultCode: responseCode, data: {message: 'Cant sign up your profile'}})
+                }
+            }, timer)
+        })
+    },
+    signOut() {
+        deleteCookie('user');
+    },
+    loadProfile(id) {
+        return new Promise((resolve, reject) => {
+            let timer = randomInteger(200, 1000);
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            setTimeout(() => {
+                let user = getCookie('user');
+                let result = {name: 'userName', surname: 'userSurname', login: user, email: `${user}@gmail.com`, phone: '+3(045)-321-43-13', numberOfPurchases: 10};
+                resolve({resultCode: 1, data: result})
+            }, timer)
+        })
+    },
+    changeProfile(data) {
+        return new Promise((resolve, reject) => {
+            let timer = randomInteger(200, 1000);
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            setTimeout(() => {
+                let result = randomInteger(0, 10);
+                let resultCode = result < 7 ? 1 : 0;
+                resolve({resultCode})
+            }, timer)
+        })
     }
 }
 
@@ -2802,7 +2859,12 @@ export const prGroupAPI = {
 
                     let result = categories[url];
 
-                    resolve({resultCode: 1, data: {...result}})
+                    if(Object.keys(categories).includes(url, 0)) {
+                        resolve({resultCode: 1, data: {...result}})
+                    } else {
+                        resolve({resultCode: 0})
+                    }
+
                 } else if (type === "brand") {
 
                     let brands = {
@@ -3240,7 +3302,11 @@ export const prGroupAPI = {
 
                     let result = brands[url];
 
-                    resolve({resultCode: 1, data: {...result}})
+                    if(Object.keys(brands).includes(url, 0)) {
+                        resolve({resultCode: 1, data: {...result}})
+                    } else {
+                        resolve({resultCode: 0})
+                    }
                 }
             }, timer)
         })
@@ -3248,7 +3314,7 @@ export const prGroupAPI = {
 }
 
 export const productAPI = {
-    loadProduct(id) {
+    loadProduct(id, brand) {
         return new Promise((resolve, reject) => {
             let timer = randomInteger(1000, 2000);
 
@@ -3347,7 +3413,7 @@ export const productAPI = {
                                 }
                             },
                             {
-                                'sku': 'i-11-128-wh-mt',
+                                'sku': 'i-11-128-gl-mt',
                                 'price': 645,
                                 'avaibility': true,
                                 'options': {
@@ -4621,10 +4687,15 @@ export const productAPI = {
                 ]
 
                 let result = products.find(product => {
-                    return product.id == id;
+                    return product.id == id && product.brand.toLowerCase() == brand;
                 });
 
-                resolve({resultCode: 1, data: {...result}})
+                if(result !== undefined) {
+                    resolve({resultCode: 1, data: {...result}})
+                } else {
+                    resolve({resultCode: 0})
+                }
+
             }, timer)
         })
     },
@@ -4737,7 +4808,7 @@ export const productAPI = {
                                 }
                             },
                             {
-                                'sku': 'i-11-128-wh-mt',
+                                'sku': 'i-11-128-gl-mt',
                                 'price': 645,
                                 'avaibility': true,
                                 'options': {
@@ -5369,15 +5440,16 @@ export const productAPI = {
                     productTitle: product.productTitle,
                     thumbnail: product.thumbnail,
                     avaibility: skuOption.avaibility,
-                    options: skuOption.options
+                    options: skuOption.options,
+                    quantity: 1
                 }
                 if(skuOption.avaibility == true) {
                     if(localStorage.getItem('cartProducts') !== null) {
                         let localProducts = JSON.parse(localStorage.cartProducts);
-                        localProducts.push({id: product.id,brand: brand,sku: skuOption.sku,quantity: 1})
+                        localProducts.push({id: product.id,brand: brand,sku: skuOption.sku,quantity: "1"})
                         localStorage.setItem('cartProducts', JSON.stringify(localProducts));
                     } else {
-                        localStorage.setItem('cartProducts', JSON.stringify([{id: product.id,brand: brand,sku: skuOption.sku,quantity: 1}]));
+                        localStorage.setItem('cartProducts', JSON.stringify([{id: product.id,brand: brand,sku: skuOption.sku,quantity: "1"}]));
                     }
                     resolve({resultCode: 1,data: result})
                 } else {
@@ -5485,7 +5557,7 @@ export const productAPI = {
                                 }
                             },
                             {
-                                'sku': 'i-11-128-wh-mt',
+                                'sku': 'i-11-128-gl-mt',
                                 'price': 645,
                                 'avaibility': true,
                                 'options': {
@@ -6101,29 +6173,77 @@ export const productAPI = {
                             }
                         ]
                     }
-                ]
+                ];
+                let result;
 
-                let result = storageProducts.map(storageProduct => {
-                    let product = products.find(product => {
-                        return product.id == storageProduct.id;
-                    });
-                    let skuOption = product.parentProducts.find(item => {
-                        return item.sku == storageProduct.sku;
-                    });
-                    return {
-                        id: storageProduct.id,
-                        brand: product.brand,
-                        sku: skuOption.sku,
-                        price: skuOption.price,
-                        productTitle: product.productTitle,
-                        thumbnail: product.thumbnail,
-                        avaibility: skuOption.avaibility,
-                        options: skuOption.options
-                    }
-                })
+                if(storageProducts !== null) {
+                    result = storageProducts.map(storageProduct => {
+                        let product = products.find(item => {
+                            return item.id == storageProduct.id;
+                        });
+                        let skuOption = product.parentProducts.find(item => {
+                            return item.sku == storageProduct.sku;
+                        });
+                        return {
+                            id: storageProduct.id,
+                            brand: product.brand,
+                            sku: skuOption.sku,
+                            price: skuOption.price,
+                            productTitle: product.productTitle,
+                            thumbnail: product.thumbnail,
+                            avaibility: skuOption.avaibility,
+                            options: skuOption.options,
+                            quantity: storageProduct.quantity
+                        }
+                    })
+                } else {
+                    result = [];
+                }
 
                 resolve({resultCode: 1,data: result})
 
+            }, timer)
+        })
+    }
+}
+
+export const cartApi = {
+    loadOptions() {
+        return new Promise((resolve, reject) => {
+            let timer = randomInteger(1000, 2000);
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            setTimeout(() => {
+                let deliveries = [{name: 'in-home', placeholder: 'In Home', forType: 'deliveryMethod'}, {name: 'new-mail', placeholder: 'New Mail', forType: 'deliveryMethod'}, {name: 'pickup-from-the-store', placeholder: 'Pickup from the store', forType: 'deliveryMethod'}];
+                let payments = [{name: 'cash-payment-upon-receipt', placeholder: 'Cash payment upon receipt', forType: 'paymentMethod'}, {name: 'bank-transfer', placeholder: 'Bank Transfer', forType: 'paymentMethod'}]
+
+                resolve({resultCode: 1, data: [...deliveries,...payments]})
+            }, timer)
+        })
+    },
+    checkout(products, options) {
+        return new Promise((resolve, reject) => {
+            let timer = randomInteger(1000, 2000);
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            setTimeout(() => {
+                let random = randomInteger(0,1);
+                let message;
+                if(random === 1) {
+                    message = 'Success, check your e-mail';
+                } else {
+                    message = 'Error: Items not found';
+                }
+
+                resolve({resultCode: random, message: message})
             }, timer)
         })
     }
