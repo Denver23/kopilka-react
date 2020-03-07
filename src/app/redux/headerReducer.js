@@ -1,4 +1,6 @@
-const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
+import {searchApi} from "../api/api";
+
+const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
 
 let initialState = {
     "topMenu": [
@@ -138,18 +140,29 @@ let initialState = {
             ]
         }
     ],
-    "searchQuery": ''
+    "searchProducts": []
 }
 
 const headerReducer = (state = initialState, action) => {
     switch (action.type) {
-        case SEARCH_PRODUCT:
-            return state;
+        case SEARCH_PRODUCTS:
+            return {
+                ...state,
+                'searchProducts': action.data
+            };
         default:
             return state;
     }
 }
 
-export const searchProduct = () => ({type: SEARCH_PRODUCT});
+export const setSearchProducts = (data) => ({type: SEARCH_PRODUCTS, data});
+
+export const searchProducts = (query) => async(dispatch) => {
+    let result = await searchApi.searchProductsApi(query);
+
+    if(result.data) {
+        dispatch(setSearchProducts(result.data))
+    }
+}
 
 export default headerReducer;

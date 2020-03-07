@@ -1,0 +1,13 @@
+@import '../../Standarts.scss';
+
+.allBrandsWrapper {
+  flex-grow: 1;
+  position: relative;
+
+  .allBrands {
+    width: $page-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

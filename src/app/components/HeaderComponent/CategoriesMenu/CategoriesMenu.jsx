@@ -9,11 +9,11 @@ const CategoriesMenu = () => {
             <div className={s.topLine}>
                 <div className={s.generalMenuList}>
                     <ul className={s.categoriesList}>
-                        <li className={s.categoryItem}><NavLink to='/top-sales-category' className={s.linkUrl} activeClassName={s.active}>Top Sales</NavLink></li>
-                        <li className={s.categoryItem}><NavLink to='/brand-focus-category' className={s.linkUrl} activeClassName={s.active}>Brand Focus</NavLink></li>
-                        <li className={s.categoryItem}><NavLink to='/hi-tech-category' className={s.linkUrl} activeClassName={s.active}>Hi-Tech</NavLink></li>
-                        <li className={s.categoryItem}><NavLink to='/best-sellers-category' className={s.linkUrl} activeClassName={s.active}>Best Sellers</NavLink></li>
-                        <li className={s.categoryItem}><NavLink to='/projects-category' className={s.linkUrl} activeClassName={s.active}>Projects</NavLink></li>
+                        <li className={s.categoryItem}><NavLink to='/top-sales-category/page-1' className={s.linkUrl} activeClassName={s.active}>Top Sales</NavLink></li>
+                        <li className={s.categoryItem}><NavLink to='/brand-focus-category/page-1' className={s.linkUrl} activeClassName={s.active}>Brand Focus</NavLink></li>
+                        <li className={s.categoryItem}><NavLink to='/hi-tech-category/page-1' className={s.linkUrl} activeClassName={s.active}>Hi-Tech</NavLink></li>
+                        <li className={s.categoryItem}><NavLink to='/best-sellers-category/page-1' className={s.linkUrl} activeClassName={s.active}>Best Sellers</NavLink></li>
+                        <li className={s.categoryItem}><NavLink to='/projects-category/page-1' className={s.linkUrl} activeClassName={s.active}>Projects</NavLink></li>
                     </ul>
                     <NavLink to='/support' className={s.linkUrl} activeClassName={s.active}>Support</NavLink>
                 </div>

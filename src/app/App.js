@@ -3,7 +3,7 @@ import HeaderComponent from "./components/HeaderComponent/HeaderComponent.jsx";
 import ProductGroupContainer from "./components/ProductGroupComponent/ProductGroupContainer.jsx";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 import s from './App.module.scss';
-import {Route, withRouter, Switch} from "react-router-dom";
+import {Route, withRouter, Switch, Redirect} from "react-router-dom";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import {initializeApp} from "./redux/appReducer";
@@ -15,6 +15,7 @@ import SignUpComponentWrapper from "./components/SignUpComponent/SignUpComponent
 import ProfileComponent from "./components/ProfileComponent/ProfileComponent";
 import AboutUsComponent from "./components/AboutUsComponent/AboutUsComponent";
 import PageNotFoundComponent from "./components/PageNotFoundComponent/PageNotFoundComponent";
+import AllBrandsComponent from "./components/AllBrandsComponent/AllBrandsComponent";
 
 class App extends Component {
     componentDidMount() {
@@ -29,9 +30,13 @@ class App extends Component {
             <HeaderComponent/>
             <Switch>
             <Route exact path='/' component={ProductGroupContainer}/>
-            <Route exact path='/:category(\w[-\w]{0,25}\w)-category' component={ProductGroupContainer}/>
+            <Route exact path='/page-:page' component={ProductGroupContainer}/>
+            <Route exact path='/:category(\w[-\w]{0,25}\w)-category' component={ProductGroupContainer} />
+            <Route exact path='/:category(\w[-\w]{0,25}\w)-category/page-:page' component={ProductGroupContainer}/>
             <Route exact path='/brands/:brand(\w[-\w]{0,25}\w)' component={ProductGroupContainer}/>
+            <Route exact path='/brands/:brand(\w[-\w]{0,25}\w)/page-:page' component={ProductGroupContainer}/>
             <Route exact path='/brands/:brand(\w[-\w]{0,25}\w)/id:id(\d+)' component={ProductComponentWrapper}/>
+            <Route exact path='/all-brands/page-:page' component={AllBrandsComponent}/>
             <Route exact path='/cart' component={CartComponentWrapper}/>
             <Route exact path='/checkout-status' component={CheckoutStatus}/>
             <Route exact path='/sign-up' component={SignUpComponentWrapper}/>
