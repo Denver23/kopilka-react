@@ -198,7 +198,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -523,7 +523,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -743,7 +743,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -963,7 +963,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -1183,7 +1183,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -1403,7 +1403,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -1623,7 +1623,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -1843,7 +1843,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -2063,7 +2063,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -2283,7 +2283,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -2503,7 +2503,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -2723,7 +2723,7 @@ export const prGroupAPI = {
                                 {
                                     "id": '10',
                                     'brand': 'Apple',
-                                    'title': 'iPhone 7 Plus',
+                                    'title': 'iPhone 7+',
                                     'price': '49.99',
                                     'additional': 'Pink Gold',
                                     "imageUrl": 'https://www.mrphonedeals.com/20062-large_default/apple-iphone-7-plus-128gb-rozovoe-zoloto-vosstanovlennyj-diamond.jpg',
@@ -3531,7 +3531,7 @@ export const productAPI = {
                                 }
                             },
                             {
-                                'sku': 'i-6-128-wh',
+                                'sku': 'i-6-128-gl',
                                 'price': 515,
                                 'avaibility': true,
                                 'options': {
@@ -4600,7 +4600,7 @@ export const productAPI = {
                         "id": 10,
                         "brand": 'Apple',
                         "mainCategory": 'hi-tech',
-                        "productTitle": 'iPhone 7 Plus',
+                        "productTitle": 'iPhone 7+',
                         "parentProducts": [
                             {
                                 'sku': 'i-7-plus-64',
@@ -6152,7 +6152,7 @@ export const productAPI = {
                     {
                         "id": 10,
                         "brand": 'Apple',
-                        "productTitle": 'iPhone 7 Plus',
+                        "productTitle": 'iPhone 7+',
                         'thumbnail': 'https://gstore.ua/content/images/29/apple-iphone-7-plus-32gb-black-92535924296621_small11.png',
                         "parentProducts": [
                             {
@@ -7535,7 +7535,7 @@ export const searchApi = {
                         "id": 10,
                         "brand": 'Apple',
                         "mainCategory": 'hi-tech',
-                        "productTitle": 'iPhone 7 Plus',
+                        "productTitle": 'iPhone 7+',
                         "parentProducts": [
                             {
                                 'sku': 'i-7-plus-64',

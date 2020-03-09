@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import s from './Options.module.scss';
 import {Field, reduxForm} from "redux-form";
 
@@ -7,7 +7,7 @@ const Options = ({ handleSubmit, fields, ...props }) => {
     let [activeOptions, changeOptions] = useState(fields.length !== 0 ? Object.keys(fields[0].options).map(option => {
         return {'name': option, 'key': ''};
     }) : []);
-    let [currentProduct, changeProduct] = useState(fields.length > 1 ? undefined : fields.length == 1 ? fields[0] : undefined);
+    let [currentProduct, changeProduct] = useState(fields.length > 1 ? undefined : fields.length === 1 ? fields[0] : undefined);
 
     let dataOption = (option, value) => {
         let result = activeOptions;

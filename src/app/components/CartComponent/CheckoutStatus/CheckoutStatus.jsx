@@ -12,7 +12,7 @@ const CheckoutStatus = (props) => {
             props.toggleCheckoutStatus(false);
             props.setCheckOutMessage('');
         };
-    }, []);
+    });
 
     return <div className={s.checkoutStatusWrapper}>
         {props.checkoutStatus ? (props.message !== '' ? props.message : (<Preloader background={'true'}/>)) : <Redirect to={'/404'} />}

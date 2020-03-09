@@ -6,7 +6,7 @@ const MainMenu = (props) => {
     return (
         <ul className={s.topMenuList}>
             {props.mainMenu.map(item => {
-                return <li><NavLink to="item.url" className={s.topMenuUrl}>{item.title}</NavLink></li>
+                return <li key={`${item.title}-top-menu`}><NavLink to="item.url" className={s.topMenuUrl}>{item.title}</NavLink></li>
             })}
         </ul>
     )

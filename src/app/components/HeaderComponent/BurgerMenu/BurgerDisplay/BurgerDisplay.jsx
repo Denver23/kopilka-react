@@ -24,7 +24,7 @@ const BurgerDisplay = (props) => {
         <div className={s.title}>Menu:</div>
         <ul className={s.itemList}>
             {props.mainMenu.map(item => {
-                return <li className={s.item}><Link to={item.url} className={s.itemLink}>{item.title}</Link></li>
+                return <li className={s.item} key={item.title}><Link to={item.url} className={s.itemLink}>{item.title}</Link></li>
             })}
         </ul>
         <div className={s.closeButton} onClick={()=>{props.setBurgerDisplay(false)}}>&#10006; Close</div>

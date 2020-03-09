@@ -60,7 +60,7 @@ const SearchForm = (props) => {
 
 const SearchInput = ({input, meta: {touched, error}, ...props}) => {
     return <div>
-        <input {...input} {...props}  autocomplete={'off'} className={s.searchInput}/>
+        <input {...input} {...props} autoComplete={'off'} className={s.searchInput}/>
     </div>
 }
 const SearchFormRedux = reduxForm({form: 'searchForm'})(SearchForm)

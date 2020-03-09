@@ -9,7 +9,7 @@ const CartComponentWrapper = ({loading, ...props}) => {
 
     useEffect(() => {
         props.loadOptions();
-    }, [])
+    })
 
     return <div className={s.cartComponentWrapper}>
         {!loading ? (<CartComponent props={props}/>) : (<Preloader background={'true'}/>)}
