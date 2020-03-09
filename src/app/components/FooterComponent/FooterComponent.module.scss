@@ -60,6 +60,13 @@
           padding: 10px;
         }
       }
+      .socialLink, .footerNavLink {
+        transition: color .3s;
+
+        &:hover {
+          color: #fce38a;
+        }
+      }
     }
     .secondLine {
       padding: 55px 20px;
@@ -88,6 +95,11 @@
           font-family: Montserrat;
           font-size: 1.1rem;
           font-weight: 500;
+          transition: opacity .3s;
+
+          &:hover {
+            opacity: 100%;
+          }
         }
       }
     }

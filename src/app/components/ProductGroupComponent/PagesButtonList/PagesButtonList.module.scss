@@ -30,6 +30,10 @@
         transition: box-shadow .5s, color .5s;
         border-radius: 50%;
         user-select: none;
+
+        &:hover {
+          color: #fce38a;
+        }
       }
 
       .pageNumber.pageNumberActive {

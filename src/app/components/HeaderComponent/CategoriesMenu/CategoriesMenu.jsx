@@ -15,7 +15,7 @@ const CategoriesMenu = () => {
                         <li className={s.categoryItem}><NavLink to='/best-sellers-category/page-1' className={s.linkUrl} activeClassName={s.active}>Best Sellers</NavLink></li>
                         <li className={s.categoryItem}><NavLink to='/projects-category/page-1' className={s.linkUrl} activeClassName={s.active}>Projects</NavLink></li>
                     </ul>
-                    <NavLink to='/support' className={s.linkUrl} activeClassName={s.active}>Support</NavLink>
+                    <NavLink to='#' className={s.linkUrl} activeClassName={s.active}>Support</NavLink>
                 </div>
                 <Search />
             </div>

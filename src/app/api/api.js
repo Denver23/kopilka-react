@@ -99,7 +99,7 @@ export const authAPI = {
 export const prGroupAPI = {
     loadPrGroup(type, url) {
         return new Promise((resolve, reject) => {
-            let timer = randomInteger(500, 1000);
+            let timer = randomInteger(200, 1000);
 
             function randomInteger(min, max) {
                 let rand = min + Math.random() * (max + 1 - min);
@@ -3316,7 +3316,7 @@ export const prGroupAPI = {
 export const productAPI = {
     loadProduct(id, brand) {
         return new Promise((resolve, reject) => {
-            let timer = randomInteger(500, 1000);
+            let timer = randomInteger(200, 1000);
 
             function randomInteger(min, max) {
                 let rand = min + Math.random() * (max + 1 - min);
@@ -5444,8 +5444,8 @@ export const productAPI = {
                     quantity: 1
                 }
                 if(skuOption.avaibility == true) {
-                    if(localStorage.getItem('cartProducts') !== null) {
-                        let localProducts = JSON.parse(localStorage.cartProducts);
+                    if(localStorage.getItem('cartProducts') !== 'null') {
+                        let localProducts = JSON.parse(localStorage.getItem('cartProducts'));
                         localProducts.push({id: product.id,brand: brand,sku: skuOption.sku,quantity: "1"})
                         localStorage.setItem('cartProducts', JSON.stringify(localProducts));
                     } else {
@@ -6210,7 +6210,7 @@ export const productAPI = {
 export const cartApi = {
     loadOptions() {
         return new Promise((resolve, reject) => {
-            let timer = randomInteger(500, 1000);
+            let timer = randomInteger(200, 1000);
 
             function randomInteger(min, max) {
                 let rand = min + Math.random() * (max + 1 - min);
@@ -6252,7 +6252,7 @@ export const cartApi = {
 export const searchApi = {
     searchProductsApi(query) {
         return new Promise((resolve, reject) => {
-            let timer = randomInteger(500, 1000);
+            let timer = randomInteger(200, 7000);
 
             function randomInteger(min, max) {
                 let rand = min + Math.random() * (max + 1 - min);
@@ -7658,7 +7658,7 @@ export const searchApi = {
 export const allBrandsApi = {
     loadBrands(startItem, endItem) {
         return new Promise((resolve, reject) => {
-            let timer = randomInteger(500, 1000);
+            let timer = randomInteger(200, 1000);
 
             function randomInteger(min, max) {
                 let rand = min + Math.random() * (max + 1 - min);

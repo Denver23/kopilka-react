@@ -140,6 +140,28 @@ let initialState = {
             ]
         }
     ],
+    'mainMenu': [
+        {
+            'title': 'Home',
+            'url': '#'
+        },
+        {
+            'title': 'Devices',
+            'url': '#'
+        },
+        {
+            'title': 'Delivery & Payment',
+            'url': '#'
+        },
+        {
+            'title': 'Guarantee',
+            'url': '#'
+        },
+        {
+            'title': 'About Us',
+            'url': '/about-us/'
+        }
+    ],
     "searchProducts": []
 }
 

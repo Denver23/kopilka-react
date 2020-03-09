@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
-import TopMenu from "./TopMenu/TopMenu";
+import MainMenu from "./MainMenu/MainMenu";
 import Cart from "./Cart/Cart";
 import SignIn from "./SignIn/SignIn";
 import s from './HeaderComponent.module.scss';
@@ -8,14 +8,19 @@ import CategoriesMenu from "./CategoriesMenu/CategoriesMenu";
 import {connect} from "react-redux";
 import ProfileLink from "./ProfileLink/ProfileLink";
 import {Link} from "react-router-dom";
+import BurgerDisplay from "./BurgerMenu/BurgerDisplay/BurgerDisplay";
 
 const HeaderComponent = (props) => {
+
+    let [burgerDisplay, setBurgerDisplay] = useState(false);
+
     return (
         <div className={s.headerDecorator}>
+            <BurgerDisplay mainMenu={props.mainMenu} burgerDisplay={burgerDisplay} setBurgerDisplay={setBurgerDisplay}/>
             <div className={s.headerComponent}>
-                <BurgerMenu></BurgerMenu>
+                <BurgerMenu burgerDisplay={burgerDisplay} setBurgerDisplay={setBurgerDisplay}/>
                 <Link to="/" className={s.logoUrl}>Portland</Link>
-                <TopMenu/>
+                <MainMenu mainMenu={props.mainMenu}/>
                 {props.profile.isAuth ? (<div className={s.profileMenu}><Cart/><ProfileLink profile={props.profile} /></div>) : (<div className={s.profileMenu}><Cart/><SignIn/></div>)}
             </div>
             <CategoriesMenu />
@@ -25,7 +30,8 @@ const HeaderComponent = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        profile: state.authReducer
+        profile: state.authReducer,
+        mainMenu: state.headerReducer.mainMenu
     }
 }
 

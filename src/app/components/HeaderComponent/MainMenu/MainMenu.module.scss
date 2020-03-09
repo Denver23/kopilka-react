@@ -1,3 +1,5 @@
+@import '../../../Standarts.scss';
+
 .topMenuList{
   display: flex;
   flex-direction: row;
@@ -13,4 +15,20 @@
   color: #343e5c;
   text-decoration: none;
   font-weight: 600;
+  position: relative;
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+  &:after {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: $primary-text-color;
+    content: '';
+    display: block;
+    transition: width .3s;
+  }
 }

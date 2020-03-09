@@ -29,7 +29,7 @@ const CartDisplay = (props) => {
         {props.products.length ? props.products.map(product => {
             return <CartProduct {...product} />
             }) : <span className={s.message}>Your cart is empty</span>}
-        {props.products.length ? <div className={s.checkoutForm}><span className={s.totalPrice}>Total Price: {totalPrice}</span><Link to={'/cart'} className={s.checkoutButton}>Checkout</Link></div> : ''}
+        {props.products.length ? <div className={s.checkoutForm}><span className={s.totalPrice}>Total Price: {totalPrice}</span><Link to={'/cart'} className={s.checkoutButton} onClick={()=>{props.changeDisplay(false)}}>Checkout</Link></div> : ''}
     </div>
 }
 
