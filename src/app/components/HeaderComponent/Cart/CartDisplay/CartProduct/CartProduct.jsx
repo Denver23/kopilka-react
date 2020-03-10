@@ -64,6 +64,7 @@ const QuantityForm = (props) => {
                     <input
                         id="quantity"
                         type="number"
+                        min={1}
                         onChange={formik.handleChange}
                         {...formik.getFieldProps('quantity')}
                         className={s.productQuantityField}
