@@ -14,7 +14,7 @@ const FooterComponent = (props) => {
                     <li><Link to={'/'} className={s.footerNavLink}>Home</Link></li>
                     <li><Link to={'/'} className={s.footerNavLink}>Shop</Link></li>
                     <li><Link to={'/'} className={s.footerNavLink}>Team</Link></li>
-                    <li><Link to={'/'} className={s.footerNavLink}>About Us</Link></li>
+                    <li><Link to={'/about-us/'} className={s.footerNavLink}>About Us</Link></li>
                     <li><Link to={'/'} className={s.footerNavLink}>Contacts</Link></li>
                 </ul>
                 <ul className={s.socialNav}>

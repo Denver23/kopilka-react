@@ -3,6 +3,9 @@
 .aboutUsWrapper {
   flex-grow: 1;
   max-width: $page-width;
+  min-width: $min-page-width;
+  padding: 0 20px;
+  box-sizing: border-box;
   margin: 0 auto;
   font-family: Montserrat;
   color: $primary-text-color;
@@ -20,8 +23,13 @@
   }
   .generalImage {
     float: left;
-    width: 500px;
-    margin: 0 15px 15px 0;
+    padding: 0 15px 15px 0;
+    box-sizing: border-box;
+
+    img {
+      width: 445px;
+      object-fit: cover;
+    }
   }
   .aboutText {
     font-size: 1.3rem;
