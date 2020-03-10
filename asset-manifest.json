@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kopilka-react/static/css/main.5670dcf0.chunk.css",
+    "main.css": "/kopilka-react/static/css/main.89bbc86e.chunk.css",
     "main.js": "/kopilka-react/static/js/main.af697e6c.chunk.js",
     "main.js.map": "/kopilka-react/static/js/main.af697e6c.chunk.js.map",
     "runtime-main.js": "/kopilka-react/static/js/runtime-main.749b4b8e.js",
@@ -8,16 +8,16 @@
     "static/js/2.c6fe8893.chunk.js": "/kopilka-react/static/js/2.c6fe8893.chunk.js",
     "static/js/2.c6fe8893.chunk.js.map": "/kopilka-react/static/js/2.c6fe8893.chunk.js.map",
     "index.html": "/kopilka-react/index.html",
-    "precache-manifest.da061a15ffb6f59860cff32f7d1e6c22.js": "/kopilka-react/precache-manifest.da061a15ffb6f59860cff32f7d1e6c22.js",
+    "precache-manifest.8ac81cf33b3f54ac9998afd19f2249a0.js": "/kopilka-react/precache-manifest.8ac81cf33b3f54ac9998afd19f2249a0.js",
     "service-worker.js": "/kopilka-react/service-worker.js",
-    "static/css/main.5670dcf0.chunk.css.map": "/kopilka-react/static/css/main.5670dcf0.chunk.css.map",
+    "static/css/main.89bbc86e.chunk.css.map": "/kopilka-react/static/css/main.89bbc86e.chunk.css.map",
     "static/media/pageNotFound.jpg": "/kopilka-react/static/media/pageNotFound.419b4538.jpg",
     "static/media/preloader.svg": "/kopilka-react/static/media/preloader.fae11f97.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.749b4b8e.js",
     "static/js/2.c6fe8893.chunk.js",
-    "static/css/main.5670dcf0.chunk.css",
+    "static/css/main.89bbc86e.chunk.css",
     "static/js/main.af697e6c.chunk.js"
   ]
 }
