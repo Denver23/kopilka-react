@@ -7,9 +7,15 @@
     justify-content: space-between;
     align-items: center;
     max-width: $page-width;
+    min-width: $min-page-width;
     margin: 0 auto;
     height: 90px;
-    grid-template-columns: 30px max-content 1fr max-content;
+    grid-template-columns: max-content 1fr max-content;
+
+    .burgerLogo {
+      display: grid;
+      grid-template-columns: 30px max-content;
+    }
 
     .logoUrl {
       font-style: italic;
@@ -23,6 +29,14 @@
     .profileMenu {
       display: flex;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headerDecorator {
+    .headerComponent {
+      grid-template-columns: max-content max-content;
     }
   }
 }

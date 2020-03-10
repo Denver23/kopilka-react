@@ -3,10 +3,12 @@
 .footer {
   background-color: #222328;
   flex-grow: 0;
+  min-width: $min-page-width;
 
   .wrapper {
     margin: 0 auto;
     max-width: $page-width;
+    min-width: $min-page-width;
 
     .firstLine {
       display: grid;

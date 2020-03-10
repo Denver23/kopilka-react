@@ -3,6 +3,7 @@
 .productGroupWrapper {
   flex-grow: 1;
   position: relative;
+  min-width: $min-page-width;
 
   .CategoryComponent {
     background-color: #e4e5e7;
@@ -10,6 +11,8 @@
   .productsGrid {
     padding: 50px 20px 0 20px;
     max-width: $page-width;
+    min-width: $min-page-width;
+    box-sizing: border-box;
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(200px, 270px) 3fr;

@@ -30,7 +30,7 @@ const CartProduct = ({options, ...props}) => {
                 }} className={s.deleteProduct}><DeleteForeverIcon fontSize="large"/></span>
             </div>
             {Object.keys(options) ? <div className={s.productOptions}>{Object.keys(options).map(item => {
-                return <div className={s.option}>
+                return <div className={s.option} key={`${props.sku} - ${item} - ${options[item]}`}>
                     <span className={s.optionTitle}>{item}:</span>
                     <span>{options[item]}</span>
                 </div>

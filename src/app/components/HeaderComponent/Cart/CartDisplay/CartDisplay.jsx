@@ -27,7 +27,7 @@ const CartDisplay = (props) => {
 
     return <div ref={cartDisplay} className={s.cartDisplay}>
         {props.products.length ? props.products.map(product => {
-            return <CartProduct {...product} />
+            return <CartProduct {...product} key={product.sku} />
             }) : <span className={s.message}>Your cart is empty</span>}
         {props.products.length ? <div className={s.checkoutForm}><span className={s.totalPrice}>Total Price: {totalPrice}</span><Link to={'/cart'} className={s.checkoutButton} onClick={()=>{props.changeDisplay(false)}}>Checkout</Link></div> : ''}
     </div>

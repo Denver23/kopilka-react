@@ -35,7 +35,7 @@ const Checkout = (props) => {
                 <CustomerFormRedux fields={[...props.checkoutOptions]} onSubmit={checkoutSubmit}/>
                 <div className={s.productsInfo}>
                     {props.products.length ? props.products.map(product => {
-                        return <CartProduct {...product} />
+                        return <CartProduct {...product} key={product.sku} />
                     }) : <span className={s.message}>Your cart is empty</span>}
                     {props.products.length ? <div className={s.priceInfo}>
                         <div className={s.priceItem}><span className={s.priceTitle}>Sum:</span>{totalPrice}$</div>

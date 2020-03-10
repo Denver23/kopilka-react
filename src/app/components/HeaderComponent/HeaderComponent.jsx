@@ -18,12 +18,14 @@ const HeaderComponent = (props) => {
         <div className={s.headerDecorator}>
             <BurgerDisplay mainMenu={props.mainMenu} burgerDisplay={burgerDisplay} setBurgerDisplay={setBurgerDisplay}/>
             <div className={s.headerComponent}>
-                <BurgerMenu burgerDisplay={burgerDisplay} setBurgerDisplay={setBurgerDisplay}/>
-                <Link to="/" className={s.logoUrl}>Portland</Link>
+                <div className={s.burgerLogo}>
+                    <BurgerMenu burgerDisplay={burgerDisplay} setBurgerDisplay={setBurgerDisplay}/>
+                    <Link to="/" className={s.logoUrl}>Portland</Link>
+                </div>
                 <MainMenu mainMenu={props.mainMenu}/>
                 {props.profile.isAuth ? (<div className={s.profileMenu}><Cart/><ProfileLink profile={props.profile} /></div>) : (<div className={s.profileMenu}><Cart/><SignIn/></div>)}
             </div>
-            <CategoriesMenu />
+            <CategoriesMenu topMenu={props.topMenu} />
         </div>
     )
 }
@@ -31,7 +33,8 @@ const HeaderComponent = (props) => {
 const mapStateToProps = (state) => {
     return {
         profile: state.authReducer,
-        mainMenu: state.headerReducer.mainMenu
+        mainMenu: state.headerReducer.mainMenu,
+        topMenu: state.headerReducer.topMenu
     }
 }
 

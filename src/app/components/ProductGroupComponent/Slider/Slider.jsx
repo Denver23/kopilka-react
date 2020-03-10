@@ -14,7 +14,7 @@ const Slider = (props) => {
 
         useLayoutEffect(() => {
             function updateSize() {
-                changeWidth(document.documentElement.clientWidth);
+                changeWidth(document.documentElement.clientWidth > 500 ? document.documentElement.clientWidth : 500);
             }
             window.addEventListener('resize', updateSize);
             updateSize();

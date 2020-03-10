@@ -28,3 +28,9 @@
     font-weight: 300;
   }
 }
+
+@media (max-width: 800px) {
+  .detailedInfo {
+    width: 100%;
+  }
+}

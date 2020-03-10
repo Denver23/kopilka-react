@@ -8,6 +8,8 @@
     align-items: center;
     padding: 72px 20px;
     max-width: 970px;
+    min-width: $min-page-width;
+    box-sizing: border-box;
     margin: 0 auto;
 
     .reviewsTitle {

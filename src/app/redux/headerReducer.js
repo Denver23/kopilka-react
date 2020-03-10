@@ -86,8 +86,8 @@ let initialState = {
             ]
         },
         {
-            'categoryTitle': 'Home',
-            'url': 'home',
+            'categoryTitle': 'Best Sellers',
+            'url': 'best-sellers',
             'hasPtypes': true,
             'ptypesList': [
                 {
@@ -113,8 +113,8 @@ let initialState = {
             ]
         },
         {
-            'categoryTitle': 'Sale',
-            'url': 'sale',
+            'categoryTitle': 'Projects',
+            'url': 'projects',
             'hasPtypes': true,
             'ptypesList': [
                 {

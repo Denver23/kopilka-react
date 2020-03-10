@@ -4,6 +4,8 @@
   margin: 50px auto 50px auto;
   padding: 0 20px;
   max-width: $page-width;
+  min-width: $min-page-width;
+  box-sizing: border-box;
 
   .bestSellersBlock {
     display: flex;
