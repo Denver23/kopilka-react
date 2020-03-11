@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/CartComponent/CartComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CartComponent/CartComponent.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +218,7 @@
       <workItem from="1583877378491" duration="1982000" />
       <workItem from="1583945262278" duration="3296000" />
       <workItem from="1583949263658" duration="1327000" />
-      <workItem from="1583960392687" duration="51000" />
+      <workItem from="1583960392687" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583950547365</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="First Final with working checkout">
+      <created>1583960474034</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583960474034</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
