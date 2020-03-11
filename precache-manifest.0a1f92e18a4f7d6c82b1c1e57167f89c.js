@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ebadf191651b7689343ea2ce62a35fd",
+    "revision": "5e6834bd6357175cd7beb4e4a8bbe9d0",
     "url": "/kopilka-react/index.html"
   },
   {
-    "revision": "8fe1816edd1663cc4768",
+    "revision": "d2dba402d5970cdb679c",
     "url": "/kopilka-react/static/css/main.23171887.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kopilka-react/static/js/2.c6fe8893.chunk.js"
   },
   {
-    "revision": "8fe1816edd1663cc4768",
-    "url": "/kopilka-react/static/js/main.c4a04214.chunk.js"
+    "revision": "d2dba402d5970cdb679c",
+    "url": "/kopilka-react/static/js/main.09c9730e.chunk.js"
   },
   {
     "revision": "bdd3bcf3760a8f407031",
