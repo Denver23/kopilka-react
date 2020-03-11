@@ -5444,7 +5444,7 @@ export const productAPI = {
                     quantity: 1
                 }
                 if(skuOption.avaibility == true) {
-                    if(localStorage.getItem('cartProducts') !== null) {
+                    if(localStorage.getItem('cartProducts') !== null && localStorage.getItem('cartProducts') !== 'null') {
                         let localProducts = JSON.parse(localStorage.getItem('cartProducts'));
                         localProducts.push({id: product.id,brand: brand,sku: skuOption.sku,quantity: "1"})
                         localStorage.setItem('cartProducts', JSON.stringify(localProducts));
