@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kopilka-react/precache-manifest.64ba8f9a2383295830ba9243df07aee6.js"
+  "/kopilka-react/precache-manifest.e5eaed16dc837c37977cfd1643426238.js"
 );
 
 self.addEventListener('message', (event) => {
