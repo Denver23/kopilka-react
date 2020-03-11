@@ -10,7 +10,9 @@ const CartDisplay = (props) => {
     let handleClickOutside = (e) => {
         const domNode = cartDisplay;
         if ((!domNode.current || !domNode.current.contains(e.target))) {
-            props.changeDisplay(false);
+            if(e.target.nodeName != 'path' && e.target.nodeName != 'svg') {
+                props.changeDisplay(false);
+            }
         }
     }
 
