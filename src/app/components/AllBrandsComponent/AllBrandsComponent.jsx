@@ -29,7 +29,7 @@ const AllBrandsList = (props) => {
     ];
 
     return <div className={s.allBrands}>
-        <Breadcrumbs list={brList}/>
+        <div className={s.breadcrumbsWrapper}><Breadcrumbs list={brList}/></div>
         <span className={s.pageTitle}>Brand List:</span>
             <ul className={s.brandsList}>
                 {props.brands.map(brand => {

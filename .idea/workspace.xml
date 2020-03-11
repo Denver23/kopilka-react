@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeaderComponent/Cart/CartDisplay/CartDisplay.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ProductGroupComponent/PagesButtonList/PagesButtonList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductGroupComponent/PagesButtonList/PagesButtonList.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +218,7 @@
       <workItem from="1583862729722" duration="931000" />
       <workItem from="1583873515971" duration="1057000" />
       <workItem from="1583877378491" duration="1982000" />
-      <workItem from="1583945262278" duration="1883000" />
+      <workItem from="1583945262278" duration="3163000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -344,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583946802236</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="First Final w/o Errors">
+      <created>1583947218426</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583947218426</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +377,7 @@
     <MESSAGE value="General Page w/o footer" />
     <MESSAGE value="Project stopped on Cart" />
     <MESSAGE value="First Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Final" />
+    <MESSAGE value="First Final w/o Errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Final w/o Errors" />
   </component>
 </project>
