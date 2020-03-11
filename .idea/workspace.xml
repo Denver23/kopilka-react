@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cb397f-ce51-4e85-b306-212e0ed585fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AllBrandsComponent/AllBrandsComponent.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProductGroupComponent/PagesButtonList/PagesButtonList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProductGroupComponent/PagesButtonList/PagesButtonList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/CartComponent/Checkout/Checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CartComponent/Checkout/Checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/CartComponent/CheckoutStatus/CheckoutStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CartComponent/CheckoutStatus/CheckoutStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/redux/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/redux/cartReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +219,8 @@
       <workItem from="1583862729722" duration="931000" />
       <workItem from="1583873515971" duration="1057000" />
       <workItem from="1583877378491" duration="1982000" />
-      <workItem from="1583945262278" duration="3163000" />
+      <workItem from="1583945262278" duration="3296000" />
+      <workItem from="1583949263658" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="First-update">
       <created>1575304457996</created>
@@ -353,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583947218426</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="First Final w/o Errors">
+      <created>1583948480760</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1583948480760</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

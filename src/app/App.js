@@ -38,7 +38,6 @@ class App extends Component {
             <Route exact path='/brands/:brand(\w[-\w]{0,25}\w)/id:id(\d+)' component={ProductComponentWrapper}/>
             <Route exact path='/all-brands/page-:page' component={AllBrandsComponent}/>
             <Route exact path='/cart' component={CartComponentWrapper}/>
-            <Route exact path='/checkout-status' component={CheckoutStatus}/>
             <Route exact path='/sign-up' component={SignUpComponentWrapper}/>
             <Route exact path='/profile' component={ProfileComponent}/>
             <Route exact path='/about-us' component={AboutUsComponent}/>

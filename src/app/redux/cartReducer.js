@@ -12,7 +12,6 @@ const SET_CHECKOUT_MESSAGE = 'SET_CHECKOUT_MESSAGE';
 
 let initialState = {
     loadingCheckout: false,
-    checkoutStatus: false,
     checkoutMessage: '',
     checkoutOptions: [],
     products: []
@@ -77,8 +76,6 @@ export const changeQuantity = (sku, quantity) => ({type: CHANGE_QUANTITY, data: 
 
 export const toggleLoadingCheckout = (loading) => ({type: TOGGLE_LOADING_CHECKOUT,loading});
 
-export const toggleCheckoutStatus = (status) => ({type: TOGGLE_CHECKOUT_STATUS,status});
-
 export const setCheckOutMessage = (message) => ({type: SET_CHECKOUT_MESSAGE, message})
 
 export const setOptions = (options) => ({type: SET_CHECKOUT_OPTIONS, options})
@@ -111,7 +108,6 @@ export const initializeProducts = (products) => async (dispatch) => {
 }
 
 export const checkoutProducts = (products, options) => async (dispatch) => {
-    dispatch(toggleCheckoutStatus(true));
     let response = await cartApi.checkout(products, options);
 
     if(response.message) {

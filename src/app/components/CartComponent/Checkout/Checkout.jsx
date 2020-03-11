@@ -9,6 +9,7 @@ import {checkoutProducts} from "../../../redux/cartReducer";
 import {Redirect} from "react-router-dom";
 import {requiredField} from "../../../utils/validators/validators";
 import Input from "../../common/Input/Input";
+import CheckoutStatus from "../CheckoutStatus/CheckoutStatus";
 
 const Checkout = (props) => {
 
@@ -31,7 +32,7 @@ const Checkout = (props) => {
 
     return <div>
         {
-            props.message !== '' || !props.checkoutStatus ? <div className={s.checkout}>
+            props.message === '' ? <div className={s.checkout}>
                 <CustomerFormRedux fields={[...props.checkoutOptions]} onSubmit={checkoutSubmit}/>
                 <div className={s.productsInfo}>
                     {props.products.length ? props.products.map(product => {
@@ -44,7 +45,7 @@ const Checkout = (props) => {
                     </div> : ''}
                     {props.products.length ? <RemoveSubmitButtonConnect /> : ''}
                 </div>
-            </div> : <Redirect to={'/checkout-status'} />
+            </div> : <CheckoutStatus />
         }
     </div>
 }
@@ -92,7 +93,6 @@ let mapStateToProps = (state) => {
     return {
         products: state.cartReducer.products,
         checkoutOptions: state.cartReducer.checkoutOptions,
-        checkoutStatus: state.cartReducer.checkoutStatus,
         message: state.cartReducer.checkoutMessage
     }
 }
