@@ -26,7 +26,9 @@ const PagesButtonList = ({portionSize = 12,...props}) => {
         }
     } else if(+activePage + step >= pagesCount) {
         for(let i = (step*2+1); i > 0; i--) {
-            pagesArray.push(pagesCount - i);
+            if(pagesCount - i > 1) {
+                pagesArray.push(pagesCount - i);
+            }
         }
     }
 
